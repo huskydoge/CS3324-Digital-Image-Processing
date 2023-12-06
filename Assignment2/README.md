@@ -20,8 +20,8 @@ The dataset used in this report is [SJTU-TIS](https://pan.baidu.com/s/12DqeiOq_5
     - `ImageReward/TranSalNet/pretrained_models`: contains the pretrained model for TransalNet. We use TranSalNet-Dense in this experiment, make sure you have downloaded the correct pretrained model.
     - `ImageReward/TranSalNet/FeatureBlendNet.py`: contains the Blending Block Module displayed in Fig 1 of the report.
     - `ImageReward/TranSalNet/TranSalNet_Dense.py`: contains the TranSalNet-Dense model structure. It's where we use the Blending Block Module to blend the textual input and visual input.
-  - `ImageReward/ImageReward.py`: contains the BLIP model structure (acutally use the code from [here](https://github.com/THUDM/ImageReward), and is where we use TranSalNet_Dense to cope with textual input and visual input.
-  - `ImageReward/checkpoint/ImageReward`: contains the pretrained model for BLIP([ImageReward](https://pan.baidu.com/s/1WbrwEQbgfpWs0YaNjaiFwg?pwd=psqv). Make sure you have downloaded the correct pretrained model and put it here.
+  - `ImageReward/ImageReward.py`: contains the BLIP model structure (acutally use the code from [here](https://github.com/THUDM/ImageReward)), and is where we use TranSalNet_Dense to cope with textual input and visual input.
+  - `ImageReward/checkpoint/ImageReward`: contains the pretrained model for BLIP([ImageReward](https://pan.baidu.com/s/1WbrwEQbgfpWs0YaNjaiFwg?pwd=psqv)). Make sure you have downloaded the correct pretrained model and put it here.
 - `train_on_saliency`: main dir for experiments
   - `train_on_saliency/config/option.py`: training options for the model.
   - `train_on_saliency/train_imgreward_for_saliency`: main file, training starter.
@@ -37,15 +37,17 @@ The dataset used in this report is [SJTU-TIS](https://pan.baidu.com/s/12DqeiOq_5
 ## Training
 run `train_on_saliency/scripts/train.sh` to train the model.
 ```text
-    usage: train_imgreward_for_saliency.py [-h] [--config CONFIG] [--seed SEED] [--savepath SAVEPATH] [--preload_path PRELOAD_PATH] [--rank_pair]                                   
-                                         [--model_name {transalnet,blend}] [--batch_size BATCH_SIZE] [--accumulation_steps ACCUMULATION_STEPS] [--epochs EPOCHS]       
-                                         [--task {all,pure,non_salient,whole,salient,oneforall}] [--train-iters TRAIN_ITERS] [--reshape RESHAPE] [--use_cross {0,1}]                        
-                                         [--fix_sal_encoder FSE] [--fix_sal_decoder FSD] [--distributed DISTRIBUTED] [--gpu_num GPU_NUM] [--gpu_id GPU_ID] [--device DEVICE]      
-                                         [--loss {mse,saloss}] [--cc_w CC_W] [--sim_w SIM_W] [--kldiv_w KLDIV_W] [--nss_w NSS_W] [--mse_w MSE_W] [--load_emb]                     
-                                         [--load_pair_store] [--fix_base] [--fix_rate FIX_RATE] [--lr LR] [--lr-decay-iters LR_DECAY_ITERS] [--train_iters TRAIN_ITERS]           
-                                         [--lr-decay-style {constant,linear,cosine,exponential,inverse_square_root}] [--lr-decay-ratio LR_DECAY_RATIO] [--warmup WARMUP]          
-                                         [--adam-beta1 ADAM_BETA1] [--adam-beta2 ADAM_BETA2] [--adam-eps ADAM_EPS] [--clear_visualizer] [--std_log]                               
-                                         [--valid_per_epoch VALID_PER_EPOCH] [--test_ckpt TEST_CKPT]
+usage: train_imgreward_for_saliency.py
+
+[-h] [--config CONFIG] [--seed SEED] [--savepath SAVEPATH] [--preload_path PRELOAD_PATH] [--rank_pair]                                   
+[--model_name {transalnet,blend}] [--batch_size BATCH_SIZE] [--accumulation_steps ACCUMULATION_STEPS] [--epochs EPOCHS]       
+[--task {all,pure,non_salient,whole,salient,oneforall}] [--train-iters TRAIN_ITERS] [--reshape RESHAPE] [--use_cross {0,1}]
+[--fix_sal_encoder FSE] [--fix_sal_decoder FSD] [--distributed DISTRIBUTED] [--gpu_num GPU_NUM] [--gpu_id GPU_ID] [--device DEVICE]      
+[--loss {mse,saloss}] [--cc_w CC_W] [--sim_w SIM_W] [--kldiv_w KLDIV_W] [--nss_w NSS_W] [--mse_w MSE_W] [--load_emb]                     
+[--load_pair_store] [--fix_base] [--fix_rate FIX_RATE] [--lr LR] [--lr-decay-iters LR_DECAY_ITERS] [--train_iters TRAIN_ITERS]           
+[--lr-decay-style {constant,linear,cosine,exponential,inverse_square_root}] [--lr-decay-ratio LR_DECAY_RATIO] [--warmup WARMUP]          
+[--adam-beta1 ADAM_BETA1] [--adam-beta2 ADAM_BETA2] [--adam-eps ADAM_EPS] [--clear_visualizer] [--std_log]                               
+[--valid_per_epoch VALID_PER_EPOCH] [--test_ckpt TEST_CKPT]
   ```
 ### Main Parameters
 - `--epochs`: number of epochs to train. 
@@ -68,7 +70,7 @@ run `train_on_saliency/scripts/train.sh` to train the model.
 
 1.Warm up TranBlend model as used in the report, run the following command:
 ```bash
-  train_on_saliency/scripts/train.sh --model_name=blend --epochs=50 --task=oneforall --fse=0.0 --fse=0.0 --use_cross=0
+train_on_saliency/scripts/train.sh --model_name=blend --epochs=50 --task=oneforall --fse=0.0 --fse=0.0 --use_cross=0
   ```
 2.Get the results of TranSalNet-Dense model in figure 4, run the following command:
 ```bash
