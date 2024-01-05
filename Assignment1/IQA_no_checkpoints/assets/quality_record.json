@@ -1,0 +1,25 @@
+{
+  "items": [
+    {
+      "path": "/data/husky/ImageReward/assets/results/AGIQA_3K_quality_ImgRward_trained1.csv",
+      "prompt": "high quality image",
+      "model_path": "/data/husky/ImageReward/train_on_AGIQA_3K/checkpoint/1108_model_for_quality1",
+      "PLCC": 0.9418,
+      "SRCC": 0.9182
+    },
+    {
+      "path": "/data/husky/ImageReward/assets/results/AGIQA_3K_quality_ImgRward_trained2.csv",
+      "prompt": "extremely high quality image, with vivid details",
+      "model_path": "/data/husky/ImageReward/train_on_AGIQA_3K/checkpoint/1108_model_for_quality2",
+      "PLCC": 0.9424,
+      "SRCC": 0.9185
+    },
+    {
+      "path": "/data/husky/ImageReward/assets/results/AGIQA_3K_quality_ImgRward_trained3.csv",
+      "model_path": "/data/husky/ImageReward/train_on_AGIQA_3K/checkpoint/1108_model_for_quality3",
+      "prompt": "extremely high quality image, with high resolution",
+      "PLCC": 0.9410,
+      "SRCC": 0.9170
+    }
+  ]
+}

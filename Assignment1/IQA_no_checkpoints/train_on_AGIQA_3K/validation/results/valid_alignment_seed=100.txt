@@ -1,0 +1,21 @@
+=====================================
+/data/husky/ImageReward/assets/results/AGIQA_3K/AGIQA_3K_ImgRward_align_seed=100.csv
+len of y and y_hat =  595
+PLCC =  0.9630736467777092
+SRCC =  0.9195293355367584
+=====================================
+/data/husky/ImageReward/assets/results/AGIQA_3K/AGIQA_3K_ImgRward_align_seed=200.csv
+len of y and y_hat =  595
+PLCC =  0.9714731874032189
+SRCC =  0.9362898938741908
+=====================================
+/data/husky/ImageReward/assets/results/AGIQA_3K/AGIQA_3K_ImgRward_quality_seed=100.csv
+len of y and y_hat =  595
+PLCC =  0.9228055437069496
+SRCC =  0.8586439978050295
+=====================================
+/data/husky/ImageReward/assets/results/AGIQA_3K/AGIQA_3K_ImgRward_quality_seed=200.csv
+len of y and y_hat =  595
+PLCC =  0.9228412536374914
+SRCC =  0.8571522284144806
+End Time: 2023年 11月 12日 星期日 14:04:14 CST

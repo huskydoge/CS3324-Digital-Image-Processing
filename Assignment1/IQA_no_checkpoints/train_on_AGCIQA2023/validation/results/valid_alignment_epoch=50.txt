@@ -1,0 +1,52 @@
+=====================================
+/data/husky/ImageReward/assets/results/AIGCIQA2023/ImgRward_trained_for_alignment.csv
+len of y and y_hat =  480
+PLCC =  0.7438505281714288
+SRCC =  0.7532617329068267
+=====================================
+/data/husky/ImageReward/assets/results/AIGCIQA2023/ImgRward_trained_for_align_epoch50.csv
+len of y and y_hat =  480
+PLCC =  0.9017967211422016
+SRCC =  0.9090435505362435
+=====================================
+/data/husky/ImageReward/assets/results/AIGCIQA2023/ImgRward_raw.csv
+len of y and y_hat =  480
+PLCC =  0.34599934701942203
+SRCC =  0.33872727312184514
+=====================================
+/data/husky/ImageReward/assets/results/AIGCIQA2023/ImgRward_trained_for_authenticity.csv
+len of y and y_hat =  480
+PLCC =  0.3032125892150996
+SRCC =  0.42068607068607067
+=====================================
+/data/husky/ImageReward/assets/results/AIGCIQA2023/ImgRward_trained_for_all_epoch50.csv
+End Time: 2023年 11月 10日 星期五 14:36:13 CST
+=====================================
+/data/husky/ImageReward/assets/results/AIGCIQA2023/ImgRward_trained_for_alignment.csv
+len of y and y_hat =  480
+PLCC =  0.7438505281714288
+SRCC =  0.7532617329068267
+=====================================
+/data/husky/ImageReward/assets/results/AIGCIQA2023/ImgRward_trained_for_align_epoch50.csv
+
+used for figure 1
+
+len of y and y_hat =  480
+PLCC =  0.9017967211422016
+SRCC =  0.9090435505362435
+=====================================
+/data/husky/ImageReward/assets/results/AIGCIQA2023/ImgRward_raw.csv
+len of y and y_hat =  480
+PLCC =  0.34599934701942203
+SRCC =  0.33872727312184514
+=====================================
+/data/husky/ImageReward/assets/results/AIGCIQA2023/ImgRward_trained_for_authenticity.csv
+len of y and y_hat =  480
+PLCC =  0.3032125892150996
+SRCC =  0.42068607068607067
+=====================================
+/data/husky/ImageReward/assets/results/AIGCIQA2023/ImgRward_trained_for_alll_epoch50.csv
+len of y and y_hat =  480
+PLCC =  0.7817085389317215
+SRCC =  0.7796335921596881
+End Time: 2023年 11月 10日 星期五 14:36:30 CST

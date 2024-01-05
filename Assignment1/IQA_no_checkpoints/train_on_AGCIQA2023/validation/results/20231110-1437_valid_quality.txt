@@ -1,0 +1,29 @@
+=====================================
+/data/husky/ImageReward/assets/results/AIGCIQA2023/ImgRward_trained_for_authenticity_epoch50.csv
+len of y and y_hat =  480
+PLCC =  0.7347464490474669
+SRCC =  0.7273709955338348
+=====================================
+/data/husky/ImageReward/assets/results/AIGCIQA2023/ImgRward_trained_for_quality_epoch50.csv
+len of y and y_hat =  480
+PLCC =  0.8855288686966808
+SRCC =  0.8976139219354249
+=====================================
+/data/husky/ImageReward/assets/results/AIGCIQA2023/ImgRward_trained_for_all_epoch50.csv
+End Time: 2023年 11月 10日 星期五 14:37:36 CST
+=====================================
+/data/husky/ImageReward/assets/results/AIGCIQA2023/ImgRward_trained_for_authenticity_epoch50.csv
+len of y and y_hat =  480
+PLCC =  0.7347464490474669
+SRCC =  0.7273709955338348
+=====================================
+/data/husky/ImageReward/assets/results/AIGCIQA2023/ImgRward_trained_for_quality_epoch50.csv
+len of y and y_hat =  480
+PLCC =  0.8855288686966808
+SRCC =  0.8976139219354249
+=====================================
+/data/husky/ImageReward/assets/results/AIGCIQA2023/ImgRward_trained_for_alll_epoch50.csv
+len of y and y_hat =  480
+PLCC =  0.7855075210606943
+SRCC =  0.7786608231806561
+End Time: 2023年 11月 10日 星期五 14:37:51 CST

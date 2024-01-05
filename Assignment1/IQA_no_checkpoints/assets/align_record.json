@@ -1,0 +1,21 @@
+{
+  "description": "AGIQA_3K_text_align metric test",
+  "blip": {
+    "description": "use blip from https://huggingface.co/Salesforce/blip-itm-large-coco",
+    "path": "/data/husky/ImageReward/AGIQA_3K_text_align_blip.csv"
+  },
+  "bridge": {
+    "description": "use bridge from https://huggingface.co/BridgeTower/bridgetower-base-itm-mlm",
+    "path": "/data/husky/ImageReward/AGIQA_3K_text_align_bridge.csv",
+    "PLCC": 0.6996,
+    "SRCC": 0.5620
+  },
+  "imgReward": {
+    "description": "img Reward model not trained",
+    "PLCC": 0.7862503209079216,
+    "SRCC": 0.7298375418087893,
+    "path": "/data/husky/ImageReward/AGIQA_3K_text_align_ImgRward.csv",
+    "PLCC_After_Fitting":0.8476,
+    "SRCC_After_Fitting":0.7298
+  }
+}

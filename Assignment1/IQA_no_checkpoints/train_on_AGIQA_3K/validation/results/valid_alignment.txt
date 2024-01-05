@@ -1,0 +1,16 @@
+=====================================
+/data/husky/ImageReward/assets/results/AGIQA_3K/AGIQA_3K_ImgRward_trained_for_align_isolation.csv
+len of y and y_hat =  599
+PLCC =  0.9685158439881683
+SRCC =  0.9290111036211931
+=====================================
+/data/husky/ImageReward/assets/results/AGIQA_3K/AGIQA_3K_ImgRward_trained_for_quality_isolation.csv
+len of y and y_hat =  599
+PLCC =  0.9547425143602329
+SRCC =  0.9117172489908941
+=====================================
+/data/husky/ImageReward/assets/results/AGIQA_3K/AGIQA_3K_ImgRward_raw_isolation.csv
+len of y and y_hat =  599
+PLCC =  0.8744125839683061
+SRCC =  0.8343781510763951
+End Time: 2023年 11月 10日 星期五 20:51:09 CST
